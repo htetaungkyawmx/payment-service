@@ -9,10 +9,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class PaymentServiceImpl implements PaymentService {
 
-    @Autowired
+    @Autowired //1 bean discovery 2 bean wiring
     private PaymentRepo paymentRepo;
     @Override
     public void save(PaymentRequest paymentRequest) {
 
     }
+
 }
