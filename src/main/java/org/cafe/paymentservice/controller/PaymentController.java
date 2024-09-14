@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -19,6 +20,7 @@ public class PaymentController {
     @PostMapping("/create-payment")
     public ResponseEntity<String> createPayment(@RequestBody PaymentRequest paymentRequest, BindingResult result) {
         log.info("Payment request: {}", paymentRequest);
+        paymentService.save(paymentRequest);
         return ResponseEntity.ok("Successfully created payment");
     }
 }

@@ -10,7 +10,7 @@
     </parent>
     <groupId>org.cafe</groupId>
     <artifactId>payment-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>payment-service</name>
     <description>payment-service</description>
     <url/>
@@ -61,7 +61,11 @@
             <groupId>org.cafe</groupId>
             <artifactId>commons-service</artifactId>
             <version>0.0.1</version>
-            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.cafe</groupId>
+            <artifactId>redis-service</artifactId>
+            <version>0.0.1</version>
         </dependency>
     </dependencies>
 
