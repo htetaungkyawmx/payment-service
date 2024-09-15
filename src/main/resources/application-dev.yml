@@ -6,3 +6,16 @@ redis:
   idle-connection: 5
   connect-timeout: 6
   read-timeout: 6
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hospital_db
+    username: hospitalusr
+    password: hospitalpwd
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true

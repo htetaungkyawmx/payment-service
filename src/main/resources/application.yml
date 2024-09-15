@@ -7,10 +7,5 @@ spring:
   profiles:
     active: dev
 
-
-
-
-
-
 #  mvn install:install-file -Dfile=libs/commons-service-0.0.1.jar -DgroupId=org.cafe -DartifactId=commons-service -Dversion=0.0.1 -Dpackaging=jar
 #  mvn install:install-file -Dfile=libs/redis-service-0.0.1.jar -DgroupId=org.cafe -DartifactId=redis-service -Dversion=0.0.1 -Dpackaging=jar
