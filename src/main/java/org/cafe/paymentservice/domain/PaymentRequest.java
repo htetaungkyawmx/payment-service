@@ -6,6 +6,7 @@ import org.cafe.commons.shared.Status;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 @Getter
 @Setter
@@ -15,7 +16,7 @@ import java.time.LocalDateTime;
 public class PaymentRequest {
     private Status status;
     private BigDecimal amount;
-    private String orderId;
+    private UUID orderId;
 
     public PaymentEntity toEntity(PaymentRequest paymentRequest) {
         return PaymentEntity.builder()
